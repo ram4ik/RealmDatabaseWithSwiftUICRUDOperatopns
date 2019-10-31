@@ -13,6 +13,7 @@
 		1D26FC1E236B4A8A006079DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D26FC1D236B4A8A006079DF /* Assets.xcassets */; };
 		1D26FC21236B4A8A006079DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D26FC20236B4A8A006079DF /* Preview Assets.xcassets */; };
 		1D26FC24236B4A8A006079DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D26FC22236B4A8A006079DF /* LaunchScreen.storyboard */; };
+		3186F152E98AC900CCB4853B /* Pods_RealmDatabaseWithSwiftUICRUDOperatopns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE6F435F95F21EF936F7A07 /* Pods_RealmDatabaseWithSwiftUICRUDOperatopns.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1D26FC20236B4A8A006079DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D26FC23236B4A8A006079DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D26FC25236B4A8A006079DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE6F435F95F21EF936F7A07 /* Pods_RealmDatabaseWithSwiftUICRUDOperatopns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmDatabaseWithSwiftUICRUDOperatopns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7362DD50F6D236EB728E03A7 /* Pods-RealmDatabaseWithSwiftUICRUDOperatopns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDatabaseWithSwiftUICRUDOperatopns.release.xcconfig"; path = "Target Support Files/Pods-RealmDatabaseWithSwiftUICRUDOperatopns/Pods-RealmDatabaseWithSwiftUICRUDOperatopns.release.xcconfig"; sourceTree = "<group>"; };
+		B935664967B09344AF308013 /* Pods-RealmDatabaseWithSwiftUICRUDOperatopns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDatabaseWithSwiftUICRUDOperatopns.debug.xcconfig"; path = "Target Support Files/Pods-RealmDatabaseWithSwiftUICRUDOperatopns/Pods-RealmDatabaseWithSwiftUICRUDOperatopns.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3186F152E98AC900CCB4853B /* Pods_RealmDatabaseWithSwiftUICRUDOperatopns.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1D26FC16236B4A88006079DF /* RealmDatabaseWithSwiftUICRUDOperatopns */,
 				1D26FC15236B4A88006079DF /* Products */,
+				E82294F01BB32904E257AAD9 /* Pods */,
+				B87E8CF4E7BAAD4D0540D334 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B87E8CF4E7BAAD4D0540D334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AE6F435F95F21EF936F7A07 /* Pods_RealmDatabaseWithSwiftUICRUDOperatopns.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E82294F01BB32904E257AAD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B935664967B09344AF308013 /* Pods-RealmDatabaseWithSwiftUICRUDOperatopns.debug.xcconfig */,
+				7362DD50F6D236EB728E03A7 /* Pods-RealmDatabaseWithSwiftUICRUDOperatopns.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D26FC28236B4A8A006079DF /* Build configuration list for PBXNativeTarget "RealmDatabaseWithSwiftUICRUDOperatopns" */;
 			buildPhases = (
+				5C902C7F107CA4C56C2B6EBF /* [CP] Check Pods Manifest.lock */,
 				1D26FC10236B4A88006079DF /* Sources */,
 				1D26FC11236B4A88006079DF /* Frameworks */,
 				1D26FC12236B4A88006079DF /* Resources */,
+				058033FD0DAA031B8043E4FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		058033FD0DAA031B8043E4FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmDatabaseWithSwiftUICRUDOperatopns/Pods-RealmDatabaseWithSwiftUICRUDOperatopns-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmDatabaseWithSwiftUICRUDOperatopns/Pods-RealmDatabaseWithSwiftUICRUDOperatopns-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmDatabaseWithSwiftUICRUDOperatopns/Pods-RealmDatabaseWithSwiftUICRUDOperatopns-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C902C7F107CA4C56C2B6EBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmDatabaseWithSwiftUICRUDOperatopns-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D26FC10236B4A88006079DF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		1D26FC29236B4A8A006079DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B935664967B09344AF308013 /* Pods-RealmDatabaseWithSwiftUICRUDOperatopns.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		1D26FC2A236B4A8A006079DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7362DD50F6D236EB728E03A7 /* Pods-RealmDatabaseWithSwiftUICRUDOperatopns.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

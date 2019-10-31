@@ -7,10 +7,34 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
+    @State var name = ""
+    @State var age = ""
     var body: some View {
-        Text("Hello World")
+        VStack {
+            TextField("name", text: $name).textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField("age", text: $age).textFieldStyle(RoundedBorderTextFieldStyle())
+            Button(action: {
+                let config = Realm.Configuration(schemaVersion: 1)
+                do {
+                    let realm = try Realm(configuration: config)
+                    let newdata = datatype()
+                    newdata.name = self.name
+                    newdata.age = self.age
+                    try realm.write({
+                        realm.add(newdata)
+                        print("Success")
+                    })
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }) {
+                Text("Save")
+            }
+        }
     }
 }
 
@@ -18,4 +42,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+class datatype: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var age = ""
 }
