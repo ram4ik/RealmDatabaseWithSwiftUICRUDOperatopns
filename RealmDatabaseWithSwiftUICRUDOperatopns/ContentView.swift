@@ -73,6 +73,27 @@ struct ContentView: View {
             }) {
                 Text("Edit")
             }
+            Button(action: {
+                let config = Realm.Configuration(schemaVersion: 1)
+                do {
+                    let realm = try Realm(configuration: config)
+                    let result = realm.objects(datatype1.self)
+                    
+                    for i in result {
+                        try realm.write({
+                            if i.name == "user" {
+                              
+                                realm.delete(i)
+                            }
+                        })
+                    }
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }) {
+                Text("Delete")
+            }
         }.padding()
     }
 }
