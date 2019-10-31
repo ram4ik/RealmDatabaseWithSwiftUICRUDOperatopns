@@ -34,7 +34,20 @@ struct ContentView: View {
             }) {
                 Text("Save")
             }
-        }
+            Button(action: {
+                let config = Realm.Configuration(schemaVersion: 1)
+                do {
+                    let realm = try Realm(configuration: config)
+                    let result = realm.objects(datatype.self)
+                    print(result)
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }) {
+                Text("Display")
+            }
+        }.padding()
     }
 }
 
