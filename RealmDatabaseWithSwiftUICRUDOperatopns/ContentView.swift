@@ -52,6 +52,27 @@ struct ContentView: View {
             }) {
                 Text("Display")
             }
+            Button(action: {
+                let config = Realm.Configuration(schemaVersion: 1)
+                do {
+                    let realm = try Realm(configuration: config)
+                    let result = realm.objects(datatype1.self)
+                    
+                    for i in result {
+                        try realm.write({
+                            if i.name == "user" {
+                                i.age = "25"
+                                realm.add(i)
+                            }
+                        })
+                    }
+                }
+                catch {
+                    print(error.localizedDescription)
+                }
+            }) {
+                Text("Edit")
+            }
         }.padding()
     }
 }
